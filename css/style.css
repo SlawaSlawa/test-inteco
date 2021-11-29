@@ -1,3 +1,7 @@
+.dn {
+    display: none;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -16,3 +20,350 @@ body {
     max-width: 1250px;
     margin: 0 auto;
 }
+
+/* ------------HEADER-------------- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.change-lang {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+}
+
+.change-lang:hover {
+    opacity: .5;
+}
+
+/* ////////////HEADER-------------- */
+
+/* ------------MAIN--------------- */
+.main {
+    background-color: #f5f0f0;
+}
+
+.section {
+    position: relative;
+    padding: 66px 0;
+}
+
+.section__wrapper {
+    position: relative;
+}
+
+.section__title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #4764b0;
+    margin-bottom: 50px;
+    padding-left: 56px;
+}
+
+.description__title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #4764b0;
+    margin-top: 0;
+}
+
+.description {
+    position: relative;
+    background-color: #fff;
+    max-width: 550px;
+    padding: 50px 46px 50px 60px;
+    z-index: 100;
+}
+
+.section__img-wrap {
+    overflow: hidden;
+    max-width: 920px;
+    margin-left: auto;
+    z-index: 50;
+}
+
+.section__img {
+    display: block;
+    max-width: 100%;
+}
+
+.section__description {
+    max-width: 756px;
+    margin: 0 auto 54px auto;
+}
+
+.section__text {
+    padding-left: 56px;
+}
+
+/* ////////////MAIN--------------- */
+
+.description--who-are-we {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* --------------section--projects------------- */
+
+.slider {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.slider__img {
+    position: relative;
+    max-width: 920px;
+    z-index: 50;
+}
+
+.slider__description {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #fff;
+    padding: 48px 60px 60px 48px;
+    max-width: 472px;
+    z-index: 100;
+}
+
+.slider__title {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.slider__arrows {
+    position: absolute;
+    right: 60px;
+    bottom: 48px;
+    z-index: 100;
+}
+
+.slider__arrow-left, .slider__arrow-right {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 10px;
+}
+
+.slider__arrow-left::after, .slider__arrow-right::after {
+    content: "";
+    position: absolute;
+    background-color: #414040;
+    width: 100%;
+    height: 2px;
+}
+
+.slider__arrow-left::after {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.slider__arrow-right::after {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.slider__arrow-left::before, .slider__arrow-right::before {
+    content: "";
+    position: absolute;
+    background-color: #414040;
+    width: 6px;
+    height: 2px;
+}
+
+.slider__arrow-left::before {
+    top: 7px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.slider__arrow-right::before {
+    top: 1px;
+    right: 0;
+    transform: rotate(235deg);
+}
+
+/* //////////////section--projects------------- */
+
+/* -------------section--now------------------ */
+.section__wrapper--section-now {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+}
+
+.section__description--section-now {
+    margin: 0;
+    margin-bottom: 64px;
+}
+
+.section__text--section-now {
+    max-width: 530px;
+    margin-top: 0;
+}
+
+.digit {
+    display: flex;
+    font-weight: bold;
+    gap: 48px;
+}
+
+.digit__block {
+    width: 245px;
+}
+
+.digit__numbers {
+    font-size: 48px;
+    line-height: 42px;
+}
+
+.digit__description {
+    font-weight: 400;
+}
+
+.digit__numbers-description {
+    font-size: 16px;
+}
+
+.feature-list {
+    position: absolute;
+    background-color: #fff;
+    max-width: 472px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 60px 40px 60px 60px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    list-style: none;
+    z-index: 100;
+}
+
+.feature-list__item {
+    position: relative;
+    margin-bottom: 18px;
+    padding-left: 24px;
+}
+
+.feature-list__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #4764b0;
+    width: 16px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+
+/* /////////////section--now------------------ */
+/* ------------section--work-with-staff------ */
+.slider__slide--work-with-staff {
+    background-color: #fff;
+    max-width: 1190px;
+    margin-left: auto;
+    padding: 40px 60px 40px 60px;
+}
+
+.slider__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.slider__row-one {
+    background-color: #4664af;
+    flex-basis: 8px;
+    height: 4px;
+}
+
+.slider__row-two {
+    background-color: #4664af;
+    flex-basis: 20px;
+    height: 4px;
+}
+
+.slider__row-three {
+    background-color: #4664af;
+    flex-basis: 26px;
+    height: 4px;
+}
+
+.slider__row-four {
+    background-color: #4664af;
+    flex-basis: 31px;
+    height: 4px;
+}
+
+.slider__row-five {
+    background-color: #4664af;
+    flex-basis: 62px;
+    height: 4px;
+}
+
+.slider__row-six {
+    background-color: #4664af;
+    flex-basis: 124px;
+    height: 4px;
+}
+
+.slider__row-seven {
+    background-color: #4664af;
+    flex-basis: 248px;
+    height: 4px;
+}
+
+.slider__row-eight {
+    background-color: #4664af;
+    flex-basis: 498px;
+    height: 4px;
+}
+
+.slider__arrows--work-with-staff {
+    top: 48px;
+    bottom: auto;
+}
+
+/* ///////////section--work-with-staff------ */
+
+/* ----------section--offers-to-employees-- */
+.section--offers-to-employees {
+    overflow: auto;
+}
+
+.section--offers-to-employees::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.section--offers-to-employees {
+    -ms-overflow-style: none;
+}
+
+.section--offers-to-employees {
+    overflow: -moz-scrollbars-none;
+}
+
+.feature-list--slider--offers-to-employees {
+    top: -48px;
+    right: 0;
+    left: auto;
+    transform: translateY(0);
+}
+
+.slider__arrows--offers-to-employees {
+    left: 60px;
+    bottom: -159px;
+}
+
+
+/* //////////section--offers-to-employees-- */
