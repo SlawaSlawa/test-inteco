@@ -1,7 +1,3 @@
-.dn {
-    display: none;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -47,12 +43,14 @@ body {
 }
 
 .section {
-    position: relative;
+    display: flex;
+    align-items: center;
     padding: 66px 0;
 }
 
 .section__wrapper {
-    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .section__title {
@@ -71,17 +69,16 @@ body {
 }
 
 .description {
-    position: relative;
     background-color: #fff;
-    max-width: 550px;
+    width: 550px;
     padding: 50px 46px 50px 60px;
     z-index: 100;
 }
 
 .section__img-wrap {
     overflow: hidden;
-    max-width: 920px;
-    margin-left: auto;
+    width: 920px;
+    margin-left: -222px;
     z-index: 50;
 }
 
@@ -101,33 +98,34 @@ body {
 
 /* ////////////MAIN--------------- */
 
-.description--who-are-we {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-}
-
 /* --------------section--projects------------- */
+
+.section--projects {
+    flex-direction: column;
+}
 
 .slider {
     position: relative;
     margin-bottom: 50px;
 }
 
+.slider__slide {
+    display: flex;
+    align-items: center;
+}
+
 .slider__img {
-    position: relative;
-    max-width: 920px;
+    display: block;
+    width: 920px;
     z-index: 50;
 }
 
 .slider__description {
-    position: absolute;
-    top: 35px;
-    right: 0;
     background-color: #fff;
     padding: 48px 60px 60px 48px;
-    max-width: 472px;
+    width: 472px;
+    margin-top: -106px;
+    margin-left: -140px;
     z-index: 100;
 }
 
@@ -141,7 +139,7 @@ body {
 .slider__arrows {
     position: absolute;
     right: 60px;
-    bottom: 48px;
+    bottom: 64px;
     z-index: 100;
 }
 
@@ -195,9 +193,15 @@ body {
 /* //////////////section--projects------------- */
 
 /* -------------section--now------------------ */
+.section--now {
+    flex-direction: column;
+    align-items: start;
+}
+
 .section__wrapper--section-now {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding-right: 60px;
 }
 
@@ -235,15 +239,11 @@ body {
 }
 
 .feature-list {
-    position: absolute;
     background-color: #fff;
-    max-width: 472px;
+    width: 472px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 60px 40px 60px 60px;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
     list-style: none;
     z-index: 100;
 }
@@ -267,7 +267,14 @@ body {
 
 /* /////////////section--now------------------ */
 /* ------------section--work-with-staff------ */
+.section--work-with-staff {
+    flex-direction: column;
+}
+
 .slider__slide--work-with-staff {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     background-color: #fff;
     max-width: 1190px;
     margin-left: auto;
@@ -279,53 +286,55 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .slider__row-one {
     background-color: #4664af;
-    flex-basis: 8px;
+    width: 8px;
     height: 4px;
 }
 
 .slider__row-two {
     background-color: #4664af;
-    flex-basis: 20px;
+    width: 20px;
     height: 4px;
 }
 
 .slider__row-three {
     background-color: #4664af;
-    flex-basis: 26px;
+    /* flex-basis: 26px; */
+    width: 26px;
     height: 4px;
 }
 
 .slider__row-four {
     background-color: #4664af;
-    flex-basis: 31px;
+    width: 31px;
     height: 4px;
 }
 
 .slider__row-five {
     background-color: #4664af;
-    flex-basis: 62px;
+    width: 62px;
     height: 4px;
 }
 
 .slider__row-six {
     background-color: #4664af;
-    flex-basis: 124px;
+    width: 124px;
     height: 4px;
 }
 
 .slider__row-seven {
     background-color: #4664af;
-    flex-basis: 248px;
+    width: 248px;
     height: 4px;
 }
 
 .slider__row-eight {
     background-color: #4664af;
-    flex-basis: 498px;
+    width: 498px;
     height: 4px;
 }
 
@@ -338,32 +347,30 @@ body {
 
 /* ----------section--offers-to-employees-- */
 .section--offers-to-employees {
-    overflow: auto;
+    flex-direction: column;
 }
 
-.section--offers-to-employees::-webkit-scrollbar {
-    width: 0 !important
-}
-
-.section--offers-to-employees {
-    -ms-overflow-style: none;
-}
-
-.section--offers-to-employees {
-    overflow: -moz-scrollbars-none;
+.section__title--offers-to-employees {
+    margin-bottom: 130px;
 }
 
 .feature-list--slider--offers-to-employees {
-    top: -48px;
-    right: 0;
-    left: auto;
-    transform: translateY(0);
+    margin-top: -75px;
+    margin-left: -142px;
+}
+
+.slider__slide--offers-to-employees {
+    align-items: flex-start;
 }
 
 .slider__arrows--offers-to-employees {
     left: 60px;
-    bottom: -159px;
+    bottom: 92px;
 }
 
 
 /* //////////section--offers-to-employees-- */
+
+.dn {
+    display: none;
+}
