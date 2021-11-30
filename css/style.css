@@ -201,6 +201,7 @@ body {
 .section__wrapper--section-now {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
     padding-right: 60px;
 }
@@ -225,6 +226,10 @@ body {
     width: 245px;
 }
 
+.digit__title {
+    text-transform: uppercase;
+}
+
 .digit__numbers {
     font-size: 48px;
     line-height: 42px;
@@ -236,6 +241,7 @@ body {
 
 .digit__numbers-description {
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .feature-list {
@@ -263,6 +269,10 @@ body {
     height: 2px;
     top: 50%;
     left: 0;
+}
+
+.section__img-wrap--feature-list {
+    margin-left: -143px;
 }
 
 /* /////////////section--now------------------ */
