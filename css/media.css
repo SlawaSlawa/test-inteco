@@ -353,6 +353,43 @@
 
 /* /////////// section--now------------------- */
 
+/* ----------section--work-with-staff-------- */
+@media (max-width: 610px) {
+    .slider--work-with-staff {
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .slider__slide--work-with-staff {
+        padding: 30px 20px 40px 20px;
+    }
+
+    .slider__row {
+        gap: 6px;
+    }
+
+    .slider__row-seven {
+        display: none;
+    }
+
+    .slider__row-eight {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .slider__arrows {
+        display: none;
+    }
+}
+
+@media (max-width: 335px) {
+    .slider--work-with-staff {
+        width: 280px;
+    }
+}
+
+/* //////////section--work-with-staff-------- */
 
 
 @media (max-width: 930px) {}

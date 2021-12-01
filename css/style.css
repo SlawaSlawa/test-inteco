@@ -293,7 +293,8 @@ body {
 
 .slider__row {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 8px;
     align-items: center;
     margin-bottom: 30px;
     width: 100%;
@@ -301,56 +302,77 @@ body {
 
 .slider__row-one {
     background-color: #4664af;
-    width: 8px;
+    /* width: 8px; */
+    flex-basis: 8px;
     height: 4px;
 }
 
 .slider__row-two {
     background-color: #4664af;
-    width: 20px;
+    /* width: 20px; */
+    flex-basis: 20px;
     height: 4px;
 }
 
 .slider__row-three {
     background-color: #4664af;
-    /* flex-basis: 26px; */
-    width: 26px;
+    /* width: 26px; */
+    flex-basis: 26px;
     height: 4px;
 }
 
 .slider__row-four {
     background-color: #4664af;
-    width: 31px;
+    /* width: 31px; */
+    flex-basis: 31px;
     height: 4px;
 }
 
 .slider__row-five {
     background-color: #4664af;
-    width: 62px;
+    /* width: 62px; */
+    flex-basis: 62px;
     height: 4px;
 }
 
 .slider__row-six {
     background-color: #4664af;
-    width: 124px;
+    /* width: 124px; */
+    flex-basis: 124px;
     height: 4px;
 }
 
 .slider__row-seven {
     background-color: #4664af;
-    width: 248px;
+    /* width: 248px; */
+    flex-basis: 248px;
     height: 4px;
 }
 
 .slider__row-eight {
     background-color: #4664af;
-    width: 498px;
+    /* width: 498px; */
+    flex-basis: 498px;
     height: 4px;
 }
 
 .slider__arrows--work-with-staff {
     top: 48px;
     bottom: auto;
+}
+
+/* .slider__row {
+    width: 100%;
+    height: 4px;
+    background-image: url("../images/divider-big.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} */
+
+.slider--work-with-staff {
+    max-width: 1190px;
+    margin-left: 60px;
 }
 
 /* ///////////section--work-with-staff------ */
