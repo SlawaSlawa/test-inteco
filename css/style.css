@@ -377,6 +377,10 @@ body {
     padding: 26px 60px 40px 49px;
 }
 
+.slider__title--work-with-staff {
+    line-height: 23px;
+}
+
 .slider__row {
     display: flex;
     justify-content: space-between;
