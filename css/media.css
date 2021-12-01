@@ -259,10 +259,6 @@
         margin-left: auto;
     }
 
-    /* .section__wrapper--section-now {
-        margin-bottom: 120px;
-    } */
-
     .section__wrapper--feature-list {
         flex-direction: column;
     }
@@ -391,9 +387,51 @@
 
 /* //////////section--work-with-staff-------- */
 
+/* ---------section--offers-to-employees---- */
+@media (max-width: 1158px) {
+    .feature-list--slider--offers-to-employees {
+        width: 550px;
+        margin-left: 0;
+    }
+}
 
-@media (max-width: 930px) {}
+@media (max-width: 1024px) {
+    .feature-list--slider--offers-to-employees {
+        margin-top: -30%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
 
-@media (max-width: 610px) {}
+@media (max-width: 782px) {
+    .feature-list--slider--offers-to-employees {
+        width: 500px;
+    }
+}
 
-@media (max-width: 300px) {}
+@media (max-width: 610px) {
+    .section__title--offers-to-employees {
+        padding-top: 0;
+    }
+
+    .feature-list--slider--offers-to-employees {
+        width: 400px;
+        padding: 30px 20px 40px 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-list--slider--offers-to-employees {
+        width: 320px;
+        padding: 30px 20px 40px 45px;
+    }
+}
+
+@media (max-width: 468px) {
+    .feature-list--slider--offers-to-employees {
+        width: 295px;
+        margin-top: -40px;
+    }
+}
+
+/* /////////section--offers-to-employees---- */
