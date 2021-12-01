@@ -377,6 +377,10 @@
     .slider__arrows {
         display: none;
     }
+
+    .swiper-pagination {
+        display: flex;
+    }
 }
 
 @media (max-width: 335px) {

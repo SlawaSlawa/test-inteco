@@ -17,6 +17,34 @@ body {
     margin: 0 auto;
 }
 
+.slider-wrapper {
+    width: 100%;
+}
+
+.swiper-pagination {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 1;
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+}
+
+.section--work-with-staff .swiper-pagination-bullet {
+    background-color: #4664af;
+}
+
 /* ------------HEADER-------------- */
 .header {
     display: flex;
@@ -361,14 +389,6 @@ body {
     bottom: auto;
 }
 
-/* .slider__row {
-    width: 100%;
-    height: 4px;
-    background-image: url("../images/divider-big.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-} */
 
 .slider--work-with-staff {
     max-width: 1190px;
@@ -387,7 +407,7 @@ body {
 }
 
 .feature-list--slider--offers-to-employees {
-    margin-top: -75px;
+    /* margin-top: -75px; */
     margin-left: -142px;
 }
 
@@ -398,6 +418,10 @@ body {
 .slider__arrows--offers-to-employees {
     left: 60px;
     bottom: 92px;
+}
+
+.slider__img--offers-to-employees {
+    margin-top: 75px;
 }
 
 
