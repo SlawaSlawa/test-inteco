@@ -142,7 +142,7 @@
 @media (max-width: 610px) {
     .section--who-are-we {
         padding-top: 0;
-        padding-bottom: 10px
+        padding-bottom: 0;
     }
 
     .description--who-are-we {
@@ -193,6 +193,7 @@
     .slider__slide {
         flex-direction: column;
         align-items: start;
+        overflow-y: scroll;
     }
 
     .slider__img {
@@ -218,7 +219,7 @@
 
 @media (max-width: 610px) {
     .section--projects {
-        padding-top: 0;
+        padding-top: 10px;
         padding-bottom: 48px;
     }
 
@@ -533,58 +534,46 @@
 /* /////////section--offers-to-employees---- */
 
 /* -----------------lines------------------ */
+
 @media (max-width: 576px) {
-    .logo::after {
+    .header::before {
+        display: none;
         border-width: 1px;
     }
 
-    .section__img-wrap::before {
+    .section--who-are-we::before {
         border-width: 1px;
-        top: 0px;
-        left: -10px;
+        height: 60%;
+        right: 96%;
     }
 
-    .section__text--projects-line::before {
+    .section--projects::before {
         border-width: 1px;
-        left: 10px;
+        height: 116%;
+        top: -20%;
+        right: calc(96% - 100%);
     }
 
-    .section__text--projects-line-bottom-right::before {
+    .section--now::before {
         border-width: 1px;
-        top: -211%;
-        left: 10px;
+        height: calc(100% - 50%);
+        top: 38%;
+        right: 96%;
     }
 
-    .section__img-wrap--feature-list::after {
-        border-width: 0;
-        top: -347px;
-        right: calc(100% + 10px);
-    }
-
-    .section__img-wrap--feature-list::before {
+    .section--now::after {
         border-width: 1px;
-        width: 150%;
-    }
-
-    .section--offers-to-employees {
-        overflow: hidden;
+        height: calc(100% - 43%);
+        top: 40%;
+        right: calc(96% - 100%);
     }
 
     .section--offers-to-employees::before {
-        top: 1px;
-        right: calc(80% + 49px);
-        border-right: 1px solid #d2c8c8;
-        border-top: 1px solid #d2c8c8;
+        border-width: 1px;
+        height: calc(100% + 22px);
+        top: 0;
+        right: 96%;
     }
-
-    /* .section {
-        overflow: hidden;
-    }
-
-    .section--projects {
-        /* overflow: visible; */
-    /* } */
-
 
 }
 
