@@ -78,10 +78,13 @@
 
 /* /////////MAIN--------- */
 
-
-
 /* ------------HEADER------------- */
-/* 106*30 */
+@media (max-width: 1200px) {
+    .header::before {
+        display: none;
+    }
+}
+
 @media (max-width: 476px) {
     .header {
         padding: 23px 15px 25px 20px;
@@ -171,6 +174,12 @@
 
 /* ////////////section--who-are-we------------- */
 /* ------------section--projects--------------- */
+@media (max-width: 1200px) {
+    .slider__arrows {
+        bottom: 50px;
+    }
+}
+
 @media (max-width: 1158px) {
     .slider__img {
         max-width: 920px;
@@ -207,7 +216,13 @@
     }
 
     .slider__arrows {
-        bottom: 40px;
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 860px) {
+    .slider__arrows {
+        display: none;
     }
 }
 
@@ -359,7 +374,7 @@
     }
 
     .section__description--section-now {
-        margin-bottom: 354px;
+        margin-bottom: 240px;
     }
 
     .feature-list {
@@ -422,7 +437,7 @@
 
     .slider__slide--work-with-staff {
         padding: 16px 20px 40px 20px;
-        min-height: 524px;
+        min-height: 350px;
     }
 
     .slider__row {
@@ -534,6 +549,118 @@
 /* /////////section--offers-to-employees---- */
 
 /* -----------------lines------------------ */
+@media (max-width: 1200px) {
+    .section--who-are-we::before {
+        right: 90%;
+    }
+
+    .section--projects::before {
+        right: calc(90% - 100%);
+    }
+
+    .section--now::before {
+        top: 211px;
+        right: 90%;
+        height: calc(100% - 215px);
+    }
+
+    .section--now::after {
+        right: calc(90% - 100%);
+    }
+
+    .section--offers-to-employees::before {
+        right: 90%;
+    }
+}
+
+@media (max-width: 1145px) {
+    .section--now::before {
+        top: 245px;
+    }
+
+    .section--now::after {
+        height: calc(100% - 247px);
+        top: 245px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .section--now::before {
+        top: 268px;
+    }
+
+    .section--now::after {
+        height: calc(100% - 270px);
+        top: 268px;
+    }
+
+    .section--offers-to-employees::before {
+        top: 63px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .section--now::before {
+        top: 500px;
+    }
+
+    .section--now::after {
+        height: calc(100% - 502px);
+        top: 500px;
+    }
+
+    .section--offers-to-employees::before {
+        top: 63px;
+    }
+}
+
+@media (max-width: 782px) {
+    .section--now::before {
+        top: 290px;
+    }
+
+    .section--now::after {
+        height: calc(100% - 292px);
+        top: 290px;
+    }
+}
+
+@media (max-width: 698px) {
+    .section--now::before {
+        top: 400px;
+    }
+
+    .section--now::after {
+        height: calc(100% - 402px);
+        top: 400px;
+    }
+}
+
+@media (max-width: 610px) {
+    .section--projects::before {
+        right: calc(97% - 100%);
+    }
+
+    .section--who-are-we::before {
+        right: 97%;
+    }
+
+    .section--now::before {
+        top: 270px;
+        right: 96%;
+    }
+
+    .section--now::after {
+        height: calc(100% - 272px);
+        top: 270px;
+        right: calc(96% - 100%);
+    }
+
+    .section--offers-to-employees::before {
+        right: 96%;
+    }
+}
+
 
 @media (max-width: 576px) {
     .header::before {
