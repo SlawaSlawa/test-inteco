@@ -563,6 +563,7 @@
 
     .section__img-wrap--feature-list::before {
         border-width: 1px;
+        width: 150%;
     }
 
     .section--offers-to-employees {
@@ -576,13 +577,15 @@
         border-top: 1px solid #d2c8c8;
     }
 
-    .section {
+    /* .section {
         overflow: hidden;
     }
 
     .section--projects {
-        overflow: visible;
-    }
+        /* overflow: visible; */
+    /* } */
+
+
 }
 
 /* /////////////////lines----------------- */
