@@ -531,3 +531,58 @@
 }
 
 /* /////////section--offers-to-employees---- */
+
+/* -----------------lines------------------ */
+@media (max-width: 576px) {
+    .logo::after {
+        border-width: 1px;
+    }
+
+    .section__img-wrap::before {
+        border-width: 1px;
+        top: 0px;
+        left: -10px;
+    }
+
+    .section__text--projects-line::before {
+        border-width: 1px;
+        left: 10px;
+    }
+
+    .section__text--projects-line-bottom-right::before {
+        border-width: 1px;
+        top: -211%;
+        left: 10px;
+    }
+
+    .section__img-wrap--feature-list::after {
+        border-width: 0;
+        top: -347px;
+        right: calc(100% + 10px);
+    }
+
+    .section__img-wrap--feature-list::before {
+        border-width: 1px;
+    }
+
+    .section--offers-to-employees {
+        overflow: hidden;
+    }
+
+    .section--offers-to-employees::before {
+        top: 1px;
+        right: calc(80% + 49px);
+        border-right: 1px solid #d2c8c8;
+        border-top: 1px solid #d2c8c8;
+    }
+
+    .section {
+        overflow: hidden;
+    }
+
+    .section--projects {
+        overflow: visible;
+    }
+}
+
+/* /////////////////lines----------------- */
